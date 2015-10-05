@@ -1,0 +1,22 @@
+<template>
+	<h3>${someAtataInfo}
+	<div>
+		<ul>
+			<li>
+				<b>City Name: ${options.city.name}</b>
+			</li>
+			<li>
+				<b>Population: ${options.city.population}</b>
+			</li>
+			<li>
+				<b>Description: ${options.city.description}, ${city.id}</b>
+			</li>
+			<li>
+				<a href.bind="'#/city/' + options.city.id"> details..</a>
+			</li>
+			<li>
+				<button click.trigger="deleteCity()">DELETE</button>
+			</li>
+		</ul>
+	</div>
+</template>

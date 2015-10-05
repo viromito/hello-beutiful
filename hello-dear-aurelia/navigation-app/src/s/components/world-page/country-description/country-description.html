@@ -1,0 +1,13 @@
+<template>
+	<h1>${someAtataInfo}
+	<div>
+		<ul>
+			<li click.trigger="about()">
+				<b>Country Name: ${options.country.name}</b>
+			</li>
+			<li>
+				<a href.bind="'#/country/' + options.country.id"> details..</a>
+			</li>
+		</ul>
+	</div>
+</template>

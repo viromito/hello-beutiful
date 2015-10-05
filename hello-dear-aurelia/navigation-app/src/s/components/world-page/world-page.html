@@ -1,0 +1,9 @@
+<template>
+	<require from="s/components/world-page/country-description/country-description"></require>
+	<div>
+		<h1>THE WORLD PAGE: ${someAtataInfo}</h1>
+		<div repeat.for="country of countries">
+			<country-description options.bind="{country: country}"></country-description>
+		</div>
+	</div>
+</template>

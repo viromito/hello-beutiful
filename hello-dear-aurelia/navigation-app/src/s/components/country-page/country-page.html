@@ -1,0 +1,11 @@
+<template>
+  <require from="s/components/country-page/city-description/city-description"></require>
+  <require from="s/components/country-page/add-city-form/add-city-form"></require>
+  <div>
+	<h1>THE COUNTRY PAGE: ${someAtataInfo}</h1>
+	<div repeat.for="city of country.cities">
+		<city-description options.bind="{city: city}"></city-description>
+	</div>
+	<add-city-form options.bind="{COUNTRY_ID: COUNTRY_ID}"></add-city-form>
+  </div>
+</template>
